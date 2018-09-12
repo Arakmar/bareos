@@ -21,23 +21,23 @@
 IF(GENERATE_DEBIAN_CONTROL)
 
    IF(HAVE_TRAYMONITOR)
-      FILE(READ ./debian/control.bareos-traymonitor DEBIAN_CONTROL_TRAYMONITOR)
+      FILE(READ ../debian/g/control.bareos-traymonitor DEBIAN_CONTROL_TRAYMONITOR)
    ENDIF()
 
    IF(HAVE_GLUSTERFS)
-      FILE(READ ./debian/control.bareos-filedaemon-glusterfs-plugin DEBIAN_CONTROL_FILEDAEMON_GLUSTERFS_PLUGIN)
-      FILE(READ ./debian/control.bareos-storage-glusterfs DEBIAN_CONTROL_STORAGE_GLUSTERFS)
+      FILE(READ ../debian/g/control.bareos-filedaemon-glusterfs-plugin DEBIAN_CONTROL_FILEDAEMON_GLUSTERFS_PLUGIN)
+      FILE(READ ../debian/g/control.bareos-storage-glusterfs DEBIAN_CONTROL_STORAGE_GLUSTERFS)
    ENDIF()
 
    IF(HAVE_CEPHFS)
-      FILE(READ ./debian/control.bareos-filedaemon-ceph-plugin DEBIAN_CONTROL_FILEDAEMON_CEPH_PLUGIN)
-      FILE(READ ./debian/control.bareos-storage-ceph DEBIAN_CONTROL_STORAGE_CEPH)
+      FILE(READ ../debian/g/control.bareos-filedaemon-ceph-plugin DEBIAN_CONTROL_FILEDAEMON_CEPH_PLUGIN)
+      FILE(READ ../debian/g/control.bareos-storage-ceph DEBIAN_CONTROL_STORAGE_CEPH)
    ENDIF()
 
    IF(HAVE_PYTHON)
-      FILE(READ ./debian/control.bareos-filedaemon-python-plugin DEBIAN_CONTROL_FILEDAEMON_PYTHON_PLUGIN)
-      FILE(READ ./debian/control.bareos-storage-python-plugin DEBIAN_CONTROL_STORAGE_PYTHON_PLUGIN)
-      FILE(READ ./debian/control.bareos-director-python-plugin DEBIAN_CONTROL_DIRECTOR_PYTHON_PLUGIN)
+      FILE(READ ../debian/g/control.bareos-filedaemon-python-plugin DEBIAN_CONTROL_FILEDAEMON_PYTHON_PLUGIN)
+      FILE(READ ../debian/g/control.bareos-storage-python-plugin DEBIAN_CONTROL_STORAGE_PYTHON_PLUGIN)
+      FILE(READ ../debian/g/control.bareos-director-python-plugin DEBIAN_CONTROL_DIRECTOR_PYTHON_PLUGIN)
    ENDIF()
 
 ENDIF()
